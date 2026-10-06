@@ -81,7 +81,6 @@
             box-shadow: 0 10px 30px -10px rgba(0, 174, 239, 0.3);
         }
 
-        /* Thermal Night Vision Mode Style */
         .thermal-mode {
             filter: sepia(100%) hue-rotate(90deg) saturate(300%) contrast(130%) !important;
         }
@@ -92,7 +91,6 @@
             background-size: 30px 30px;
         }
 
-        /* Custom Scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -122,7 +120,6 @@
                 </div>
             </a>
 
-            <!-- Desktop Nav -->
             <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-300">
                 <a href="#hero" class="hover:text-brand-accent transition-colors">الرئيسية</a>
                 <a href="#viewport" class="hover:text-brand-accent transition-colors flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span> البث المباشر</a>
@@ -144,7 +141,6 @@
     </header>
 
     <section id="hero" class="relative pt-32 pb-20 overflow-hidden min-h-screen flex items-center">
-        <!-- Ambient Light Glows -->
         <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand-500/10 rounded-full blur-[140px] pointer-events-none"></div>
         <div class="absolute bottom-10 right-10 w-96 h-96 bg-emerald-500/10 rounded-full blur-[120px] pointer-events-none"></div>
 
@@ -166,7 +162,6 @@
                         تأسيس وترتيب وأرقى صيانة لمنظومات المراقبة المنزلية والتجارية بمصر. أحدث تقنيات التعرف على الوجوه والرؤية الليلية الملونة بدقة 4K مع ضمان واستجابة فورية.
                     </p>
 
-                    <!-- Trust Badges Quick Row -->
                     <div class="grid grid-cols-3 gap-3 pt-2">
                         <div class="glass-panel p-3 rounded-xl text-center border border-slate-800">
                             <i class="fa-solid fa-shield-check text-brand-accent text-xl mb-1 block"></i>
@@ -199,7 +194,6 @@
                             <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=800&q=80" alt="Camera CCTV Preview" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90">
                             <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
                             
-                            <!-- Floating AI Card -->
                             <div class="absolute bottom-6 left-6 right-6 p-4 rounded-2xl glass-panel border border-slate-700/80 flex items-center justify-between">
                                 <div class="flex items-center gap-3">
                                     <div class="w-3 h-3 rounded-full bg-emerald-400 animate-ping"></div>
@@ -227,8 +221,6 @@
             </div>
 
             <div class="glass-panel rounded-3xl p-4 sm:p-6 border border-slate-800 relative shadow-2xl overflow-hidden">
-                
-                <!-- Camera Viewport Control Header -->
                 <div class="flex flex-wrap items-center justify-between gap-4 mb-4 pb-4 border-b border-slate-800">
                     <div class="flex items-center gap-3">
                         <span class="flex h-3 w-3 relative">
@@ -248,17 +240,12 @@
                     </div>
                 </div>
 
-                <!-- Video / Screen Simulation Container -->
                 <div class="relative w-full aspect-video sm:aspect-[21/9] rounded-2xl overflow-hidden bg-black border border-slate-800 group">
-                    
-                    <!-- Main Background Camera Image -->
                     <img id="main-cam-feed" src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=1200&q=80" class="w-full h-full object-cover transition-all duration-500">
 
-                    <!-- Cam Grid Layer & Scanline -->
                     <div class="absolute inset-0 cam-grid-overlay opacity-30 pointer-events-none"></div>
                     <div class="absolute inset-0 bg-gradient-to-b from-transparent via-brand-500/10 to-transparent h-10 animate-scanline pointer-events-none"></div>
 
-                    <!-- AI Motion Detection Target Box (Interactive) -->
                     <div id="ai-target-box" class="absolute top-1/3 left-1/3 w-32 h-32 border-2 border-emerald-400 rounded-lg pointer-events-none transition-all duration-700 flex flex-col justify-between p-1 bg-emerald-500/10">
                         <div class="flex justify-between text-[9px] font-mono text-emerald-300 bg-slate-950/80 px-1 rounded">
                             <span>HUMAN AI</span>
@@ -267,10 +254,9 @@
                         <div class="text-[8px] font-mono text-emerald-400 text-center bg-slate-950/80 rounded">TARGET LOCK</div>
                     </div>
 
-                    <!-- Screen Overlay Data HUD -->
                     <div class="absolute top-4 right-4 text-xs font-mono text-emerald-400 bg-slate-950/80 p-2 rounded-lg border border-emerald-500/30 space-y-1">
                         <div>REC ● 4K UHD 3840x2160</div>
-                        <div id="live-time-stamp">2026-10-06 03:52:11</div>
+                        <div id="live-time-stamp">2026-10-06 04:00:00</div>
                     </div>
 
                     <div class="absolute bottom-4 left-4 text-xs font-mono text-slate-400 bg-slate-950/80 p-2 rounded-lg border border-slate-800">
@@ -290,21 +276,16 @@
                 <p class="text-slate-400 text-sm">اسحب السلايدر لمقارنة وضوح التفاصيل وتعرف لوحات السيارات بوضوح بين الدقة العادية ودقة 4K الفائقة</p>
             </div>
 
-            <!-- Before / After Interactive Visual Slider -->
             <div class="max-w-4xl mx-auto glass-panel p-3 rounded-3xl border border-slate-800">
                 <div id="comparison-container" class="relative aspect-video w-full rounded-2xl overflow-hidden select-none cursor-ew-resize">
-                    
-                    <!-- 4K Image (After / Right Side underneath) -->
                     <img src="https://images.unsplash.com/photo-1508873696983-2df515122519?auto=format&fit=crop&w=1200&q=80" class="absolute inset-0 w-full h-full object-cover">
                     <span class="absolute top-4 left-4 bg-emerald-500 text-white text-xs font-bold px-3 py-1.5 rounded-lg shadow-md z-10">دقة 4K Ultra HD (صورة حادة وواضحة)</span>
 
-                    <!-- 2MP Image (Before / Overlay Clip) -->
                     <div id="before-image-wrap" class="absolute inset-0 w-1/2 overflow-hidden border-r-2 border-brand-accent">
                         <img src="https://images.unsplash.com/photo-1508873696983-2df515122519?auto=format&fit=crop&w=1200&q=80" class="absolute inset-0 w-full h-full object-cover filter blur-[2.5px] brightness-90">
                         <span class="absolute top-4 right-4 bg-slate-800/90 text-slate-300 text-xs font-bold px-3 py-1.5 rounded-lg shadow-md">دقة 2MP العادية</span>
                     </div>
 
-                    <!-- Divider Handle -->
                     <div id="slider-handle" class="absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-8 flex items-center justify-center pointer-events-none">
                         <div class="w-8 h-8 rounded-full bg-brand-500 text-white flex items-center justify-center shadow-lg border-2 border-white text-xs">
                             <i class="fa-solid fa-arrows-left-right"></i>
@@ -325,10 +306,8 @@
 
             <div class="grid lg:grid-cols-12 gap-8">
                 
-                <!-- Left: Configuration Form -->
                 <div class="lg:col-span-7 space-y-6">
                     
-                    <!-- Property Type Selector -->
                     <div class="glass-panel p-6 rounded-3xl space-y-4 border border-slate-800">
                         <label class="block text-sm font-bold text-slate-200">1. اختر نوع العقار / المنشأة:</label>
                         <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
@@ -351,7 +330,6 @@
                         </div>
                     </div>
 
-                    <!-- Options Controls -->
                     <div class="glass-panel p-6 rounded-3xl space-y-6 border border-slate-800">
                         <div>
                             <div class="flex justify-between text-sm font-bold text-slate-200 mb-2">
@@ -380,7 +358,6 @@
                             </div>
                         </div>
 
-                        <!-- Installation Cable Length -->
                         <div>
                             <label class="block text-xs font-bold text-slate-300 mb-2">تقدير امتار الأسلاك والتأسيس (متر):</label>
                             <input type="number" id="cable-meters" value="60" min="10" oninput="calculateTotal()" class="w-full bg-slate-900 border border-slate-700 text-white rounded-xl p-3 text-sm focus:border-brand-500 outline-none">
@@ -389,7 +366,6 @@
 
                 </div>
 
-                <!-- Right: Summary Card & Storage Calculator -->
                 <div class="lg:col-span-5 space-y-6">
                     <div class="glass-panel p-6 rounded-3xl border border-brand-500/30 space-y-6 relative overflow-hidden">
                         <div class="absolute -right-10 -top-10 w-32 h-32 bg-brand-500/10 rounded-full blur-2xl"></div>
@@ -399,18 +375,16 @@
                             تفاصيل التكلفة والتخزين
                         </h3>
 
-                        <!-- Estimated Days of Recording Display -->
                         <div class="p-4 rounded-2xl bg-slate-900/80 border border-slate-800 flex items-center justify-between">
                             <div class="flex items-center gap-3">
                                 <i class="fa-solid fa-hard-drive text-2xl text-emerald-400"></i>
                                 <div>
                                     <span class="text-xs text-slate-400 block">مدة التسجيل المستمر المتوقعة</span>
-                                    <span id="recording-days" class="text-lg font-black text-emerald-400">حوالي 14 يوم تسعير متواصل</span>
+                                    <span id="recording-days" class="text-lg font-black text-emerald-400">حوالي 14 يوم تسجيل متواصل</span>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Price Breakdown -->
                         <div class="space-y-3 text-sm text-slate-300 border-b border-slate-800 pb-4">
                             <div class="flex justify-between">
                                 <span>تكلفة الكاميرات وأجهزة التسجيل:</span>
@@ -426,14 +400,12 @@
                             </div>
                         </div>
 
-                        <!-- Total Price Display -->
                         <div class="text-center space-y-1">
                             <span class="text-xs text-slate-400 block font-bold">إجمالي التكلفة التقديرية</span>
                             <div id="total-price" class="text-4xl font-black bg-gradient-to-r from-brand-accent to-emerald-400 bg-clip-text text-transparent">0 ج.م</div>
                             <span class="text-[10px] text-slate-500 block">شاملة التركيب والضمان لمدة سنة مجاناً</span>
                         </div>
 
-                        <!-- Action Buttons -->
                         <button onclick="sendOrderToWhatsApp()" class="w-full py-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-base shadow-lg shadow-emerald-600/30 transition-all flex items-center justify-center gap-2">
                             <i class="fa-brands fa-whatsapp text-xl"></i>
                             تأكيد الحجز المعاينة فوراً عبر الواتساب
@@ -462,6 +434,7 @@
         </div>
     </section>
 
+    <!-- Admin Panel Modal -->
     <div id="admin-modal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md hidden flex items-center justify-center p-4">
         <div class="glass-panel max-w-lg w-full rounded-3xl p-6 border border-slate-800 space-y-6 relative">
             <button onclick="toggleAdminModal()" class="absolute top-4 left-4 text-slate-400 hover:text-white">
@@ -480,16 +453,46 @@
             </div>
 
             <div id="admin-panel-content" class="hidden space-y-4">
-                <div class="p-3 bg-emerald-500/10 border border-emerald-500/30 rounded-xl text-emerald-400 text-xs font-bold">
-                    تم الاتصال بقاعدة بيانات Firebase بنجاح
+                <div class="p-3 bg-emerald-500/10 border border-emerald-500/30 rounded-xl text-emerald-400 text-xs font-bold flex items-center gap-2">
+                    <i class="fa-solid fa-database"></i>
+                    <span>متصل بقاعدة بيانات Firebase Firestore</span>
                 </div>
-                <p class="text-xs text-slate-300">تعديل تكلفة سعر الكاميرا الأساسي (ج.م):</p>
-                <input type="number" id="base-cam-price-input" value="1200" class="w-full bg-slate-900 border border-slate-700 text-white p-3 rounded-xl outline-none">
-                <button onclick="saveAdminSettings()" class="w-full py-3 bg-emerald-600 text-white font-bold rounded-xl">حفظ التغييرات</button>
+
+                <div class="space-y-3">
+                    <div>
+                        <label class="text-xs text-slate-300 block mb-1">تعديل تكلفة سعر الكاميرا الأساسي (ج.م):</label>
+                        <input type="number" id="base-cam-price-input" value="1200" class="w-full bg-slate-900 border border-slate-700 text-white p-3 rounded-xl outline-none focus:border-brand-500">
+                    </div>
+
+                    <div>
+                        <label class="text-xs text-slate-300 block mb-1">سعر متر الكابل والتأسيس (ج.م):</label>
+                        <input type="number" id="cable-meter-price-input" value="25" class="w-full bg-slate-900 border border-slate-700 text-white p-3 rounded-xl outline-none focus:border-brand-500">
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-2">
+                        <div>
+                            <label class="text-[10px] text-slate-400 block mb-1">هارد 1 تيرا:</label>
+                            <input type="number" id="hdd1tb-price-input" value="1400" class="w-full bg-slate-900 border border-slate-700 text-white p-2 text-xs rounded-lg outline-none">
+                        </div>
+                        <div>
+                            <label class="text-[10px] text-slate-400 block mb-1">هارد 2 تيرا:</label>
+                            <input type="number" id="hdd2tb-price-input" value="2400" class="w-full bg-slate-900 border border-slate-700 text-white p-2 text-xs rounded-lg outline-none">
+                        </div>
+                        <div>
+                            <label class="text-[10px] text-slate-400 block mb-1">هارد 4 تيرا:</label>
+                            <input type="number" id="hdd4tb-price-input" value="4200" class="w-full bg-slate-900 border border-slate-700 text-white p-2 text-xs rounded-lg outline-none">
+                        </div>
+                    </div>
+                </div>
+
+                <button onclick="saveAdminSettings()" class="w-full py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-xl shadow-lg transition-all">
+                    حفظ التغييرات في قاعدة البيانات
+                </button>
             </div>
         </div>
     </div>
 
+    <!-- Social Proof Toast -->
     <div id="social-proof-toast" class="fixed bottom-6 left-6 z-40 glass-panel border border-brand-500/40 p-4 rounded-2xl shadow-2xl transition-all duration-500 translate-y-32 opacity-0 max-w-sm hidden sm:flex items-center gap-3">
         <div class="w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
             <i class="fa-solid fa-check text-lg"></i>
@@ -500,14 +503,82 @@
         </div>
     </div>
 
+    <!-- Floating WhatsApp Button -->
     <div class="fixed bottom-6 right-6 z-40 flex flex-col gap-3">
         <a href="https://wa.me/201000000000" target="_blank" class="w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-400 text-white flex items-center justify-center shadow-lg shadow-emerald-500/40 hover:scale-110 transition-all">
             <i class="fa-brands fa-whatsapp text-2xl"></i>
         </a>
     </div>
 
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+
     <script>
-        /* Camera Feeds and Night Vision Toggle Logic */
+        /* ----------------------------------------------------
+           1. Firebase Config & Firestore Initialization
+        ---------------------------------------------------- */
+        const firebaseConfig = {
+            apiKey: "YOUR_API_KEY",
+            authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+            projectId: "YOUR_PROJECT_ID",
+            storageBucket: "YOUR_PROJECT_ID.appspot.com",
+            messagingSenderId: "YOUR_SENDER_ID",
+            appId: "YOUR_APP_ID"
+        };
+
+        let db = null;
+        try {
+            if (!firebase.apps.length) {
+                firebase.initializeApp(firebaseConfig);
+            }
+            db = firebase.firestore();
+        } catch (e) {
+            console.warn("Firebase not initialized. Running in local state fallback mode.");
+        }
+
+        // Global Configuration Store (Updated via Firebase)
+        let configData = {
+            baseCamPrice: 1200,
+            cableMeterPrice: 25,
+            installPricePerCam: 350,
+            hdd1TB: 1400,
+            hdd2TB: 2400,
+            hdd4TB: 4200,
+            adminPassword: "admin123"
+        };
+
+        function loadSettingsFromFirebase() {
+            if (!db) {
+                calculateTotal();
+                return;
+            }
+
+            db.collection("settings").doc("pricing").onSnapshot((doc) => {
+                if (doc.exists) {
+                    configData = { ...configData, ...doc.data() };
+                    // Update admin inputs if open
+                    if (document.getElementById('base-cam-price-input')) {
+                        document.getElementById('base-cam-price-input').value = configData.baseCamPrice;
+                        document.getElementById('cable-meter-price-input').value = configData.cableMeterPrice;
+                        document.getElementById('hdd1tb-price-input').value = configData.hdd1TB;
+                        document.getElementById('hdd2tb-price-input').value = configData.hdd2TB;
+                        document.getElementById('hdd4tb-price-input').value = configData.hdd4TB;
+                    }
+                    calculateTotal();
+                } else {
+                    // Initialize document in Firestore if not existing
+                    db.collection("settings").doc("pricing").set(configData);
+                }
+            }, (error) => {
+                console.error("Firestore Error:", error);
+                calculateTotal();
+            });
+        }
+
+        /* ----------------------------------------------------
+           2. Camera Feeds and Night Vision
+        ---------------------------------------------------- */
         const camFeeds = {
             cam1: 'https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=1200&q=80',
             cam2: 'https://images.unsplash.com/photo-1541888946425-d0fbb186a5b3?auto=format&fit=crop&w=1200&q=80',
@@ -521,7 +592,6 @@
             document.getElementById('active-cam-title').innerText = title;
             feedImg.src = camFeeds[camKey];
 
-            // Animate target box position randomly to simulate AI motion tracking
             const target = document.getElementById('ai-target-box');
             target.style.top = Math.floor(Math.random() * 40 + 20) + '%';
             target.style.left = Math.floor(Math.random() * 40 + 20) + '%';
@@ -537,7 +607,9 @@
             }
         }
 
-        /* Quality Comparison Slider Mouse and Touch Movement */
+        /* ----------------------------------------------------
+           3. Before / After Comparison Slider
+        ---------------------------------------------------- */
         const compContainer = document.getElementById('comparison-container');
         const beforeWrap = document.getElementById('before-image-wrap');
         const handle = document.getElementById('slider-handle');
@@ -570,9 +642,9 @@
             });
         }
 
-        /* Calculator Logic */
-        let baseCamPrice = 1200;
-
+        /* ----------------------------------------------------
+           4. Smart Calculator Logic
+        ---------------------------------------------------- */
         function selectProperty(type) {
             document.querySelectorAll('.prop-btn').forEach(btn => {
                 btn.classList.remove('active', 'border-brand-500', 'text-brand-accent');
@@ -582,24 +654,22 @@
         }
 
         function calculateTotal() {
-            const camCount = parseInt(document.getElementById('cam-count').value);
-            const res = parseInt(document.getElementById('cam-res').value);
-            const hdd = parseInt(document.getElementById('hdd-size').value);
+            const camCount = parseInt(document.getElementById('cam-count').value) || 1;
+            const res = parseInt(document.getElementById('cam-res').value) || 5;
+            const hdd = parseInt(document.getElementById('hdd-size').value) || 2;
             const cables = parseInt(document.getElementById('cable-meters').value) || 0;
 
             document.getElementById('cam-count-display').innerText = `${camCount} كاميرات`;
 
-            // Price multiplier based on resolution
             let resMultiplier = res === 8 ? 2.2 : (res === 5 ? 1.4 : 1.0);
             
-            let hardwareTotal = Math.round(camCount * baseCamPrice * resMultiplier);
-            let cablesTotal = cables * 25;
-            let hddPrice = hdd === 4 ? 4200 : (hdd === 2 ? 2400 : 1400);
-            let installationTotal = camCount * 350;
+            let hardwareTotal = Math.round(camCount * configData.baseCamPrice * resMultiplier);
+            let cablesTotal = cables * configData.cableMeterPrice;
+            let hddPrice = hdd === 4 ? configData.hdd4TB : (hdd === 2 ? configData.hdd2TB : configData.hdd1TB);
+            let installationTotal = camCount * configData.installPricePerCam;
 
             let grandTotal = hardwareTotal + cablesTotal + hddPrice + installationTotal;
 
-            // Storage Days calculation formula approximation
             let storageDays = Math.round((hdd * 1000) / (camCount * (res * 12)));
 
             document.getElementById('hardware-cost').innerText = `${hardwareTotal.toLocaleString()} ج.م`;
@@ -609,7 +679,9 @@
             document.getElementById('recording-days').innerText = `حوالي ${storageDays} يوم تسجيل متواصل`;
         }
 
-        /* Social Proof Banner Rotator */
+        /* ----------------------------------------------------
+           5. Social Proof Toast Rotator
+        ---------------------------------------------------- */
         const proofMessages = [
             "قام عميل في التجمع الخامس بتأكيد حجز 4 كاميرات 5MP",
             "تم حجز معاينة مجانية لفيلا في الشيخ زايد الآن",
@@ -634,7 +706,9 @@
             }, 10000);
         }
 
-        /* WhatsApp Order Sender */
+        /* ----------------------------------------------------
+           6. WhatsApp Direct Order Sender
+        ---------------------------------------------------- */
         function sendOrderToWhatsApp() {
             const cams = document.getElementById('cam-count').value;
             const res = document.getElementById('cam-res').value;
@@ -645,7 +719,9 @@
             window.open(`https://wa.me/201000000000?text=${msg}`, '_blank');
         }
 
-        /* Admin Modal Logic */
+        /* ----------------------------------------------------
+           7. Admin Panel & Firestore Save Logic
+        ---------------------------------------------------- */
         function toggleAdminModal() {
             document.getElementById('admin-modal').classList.toggle('hidden');
         }
@@ -654,21 +730,56 @@
 
         function loginAdmin() {
             const pass = document.getElementById('admin-pass').value;
-            if(pass === "admin123" || pass === "123456") {
+            if(pass === configData.adminPassword || pass === "admin123" || pass === "123456") {
                 document.getElementById('admin-login-form').classList.add('hidden');
                 document.getElementById('admin-panel-content').classList.remove('hidden');
+                
+                document.getElementById('base-cam-price-input').value = configData.baseCamPrice;
+                document.getElementById('cable-meter-price-input').value = configData.cableMeterPrice;
+                document.getElementById('hdd1tb-price-input').value = configData.hdd1TB;
+                document.getElementById('hdd2tb-price-input').value = configData.hdd2TB;
+                document.getElementById('hdd4tb-price-input').value = configData.hdd4TB;
             } else {
                 alert("كلمة المرور غير صحيحة");
             }
         }
 
         function saveAdminSettings() {
-            baseCamPrice = parseInt(document.getElementById('base-cam-price-input').value) || 1200;
-            calculateTotal();
-            toggleAdminModal();
+            const newBasePrice = parseInt(document.getElementById('base-cam-price-input').value) || 1200;
+            const newCablePrice = parseInt(document.getElementById('cable-meter-price-input').value) || 25;
+            const newHdd1TB = parseInt(document.getElementById('hdd1tb-price-input').value) || 1400;
+            const newHdd2TB = parseInt(document.getElementById('hdd2tb-price-input').value) || 2400;
+            const newHdd4TB = parseInt(document.getElementById('hdd4tb-price-input').value) || 4200;
+
+            const updatedData = {
+                baseCamPrice: newBasePrice,
+                cableMeterPrice: newCablePrice,
+                hdd1TB: newHdd1TB,
+                hdd2TB: newHdd2TB,
+                hdd4TB: newHdd4TB
+            };
+
+            if (db) {
+                db.collection("settings").doc("pricing").set(updatedData, { merge: true })
+                .then(() => {
+                    alert("تم حفظ الأسعار الجديدة بنجاح في قاعدة البيانات!");
+                    toggleAdminModal();
+                })
+                .catch((error) => {
+                    console.error("Error saving data: ", error);
+                    alert("حدث خطأ أثناء الاتصال بقاعدة البيانات.");
+                });
+            } else {
+                configData = { ...configData, ...updatedData };
+                calculateTotal();
+                toggleAdminModal();
+                alert("تم تحديث الأسعار مؤقتاً (مُعطّل الحفظ السحابي بدون مفاتيح Firebase).");
+            }
         }
 
-        /* Live Clock Update */
+        /* ----------------------------------------------------
+           8. Clock & Initialization
+        ---------------------------------------------------- */
         setInterval(() => {
             const now = new Date();
             const timeStr = now.toISOString().replace('T', ' ').substring(0, 19);
@@ -676,9 +787,8 @@
             if(clockEl) clockEl.innerText = timeStr;
         }, 1000);
 
-        // Initial Calculation Run on Page Load
         window.onload = function() {
-            calculateTotal();
+            loadSettingsFromFirebase();
             rotateSocialProof();
         };
     </script>
