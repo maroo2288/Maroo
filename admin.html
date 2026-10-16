@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>رقيب — الأدمن</title><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#0A1626">
+<link rel="manifest" href="admin-manifest.json"><link rel="icon" type="image/png" href="admin-icon-192.png"><link rel="apple-touch-icon" href="admin-apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="أدمن رقيب">
+<style>body{margin:0;background:#0A1626;color:#EAF1F6;font-family:system-ui,sans-serif;display:grid;place-items:center;min-height:100vh}</style></head>
+<body><p id="m">جاري تحميل لوحة التحكم...</p>
+<script>
+window.addEventListener("beforeinstallprompt",function(e){e.preventDefault();window.__bip=e});
+(function(){
+fetch(new URL("index.html",location.href).href,{cache:"no-store"}).then(function(r){if(!r.ok)throw 0;return r.text()}).then(function(h){
+h=h.replace('href="manifest.webmanifest"','href="admin-manifest.json"').replace('href="icon-192.png"','href="admin-icon-192.png"').replace('href="apple-touch-icon.png"','href="admin-apple-touch-icon.png"').replace(/<head>/i,'<head><meta name="robots" content="noindex,nofollow"><script>window.RQ_ADMIN=1<\/script>');
+document.open();document.write(h);document.close()
+}).catch(function(){document.getElementById("m").textContent="تعذر التحميل. اتأكد من النت وجرب تاني."})
+})();
+</script></body></html>
