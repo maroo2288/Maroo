@@ -50,5 +50,12 @@
    "form_factor": "narrow",
    "label": "حلول حسب المكان"
   }
- ]
+ ],
+ "related_applications": [
+  {
+   "platform": "webapp",
+   "url": "https://maroo2288.github.io/Maroo/manifest.webmanifest"
+  }
+ ],
+ "prefer_related_applications": false
 }
