@@ -6,6 +6,7 @@
 <title>رقيب | تركيب وصيانة كاميرات المراقبة</title>
 <meta name="description" content="تركيب وصيانة كاميرات المراقبة للبيوت والمحلات والشركات. معاينة مجانية وضمان على الشغل.">
 <meta name="theme-color" content="#12263A">
+<link rel="sitemap" type="application/xml" href="sitemap.xml">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" type="image/png" href="icon-192.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -14,8 +15,9 @@
 <meta property="og:type" content="website"><meta property="og:locale" content="ar_EG"><meta property="og:site_name" content="رقيب">
 <meta property="og:title" content="رقيب | تركيب وصيانة كاميرات المراقبة"><meta property="og:description" content="معاينة مجانية وتركيب نضيف وضمان على الشغل. شوف المنتجات وأسعارنا واطلب من موبايلك.">
 <meta property="og:image" content="https://maroo2288.github.io/Maroo/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:url" content="https://maroo2288.github.io/Maroo/"><link rel="canonical" href="https://maroo2288.github.io/Maroo/"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://maroo2288.github.io/Maroo/og-image.png">
-<script>addEventListener("beforeinstallprompt",function(e){e.preventDefault();window.__bip=e})</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"رقيب","description":"تركيب وصيانة كاميرات المراقبة للبيوت والمحلات والشركات","url":"https://maroo2288.github.io/Maroo/","image":"https://maroo2288.github.io/Maroo/og-image.png","telephone":"+201201016897","email":"maroo01201016897@gmail.com","areaServed":"EG"}</script>
+<script>addEventListener("beforeinstallprompt",function(e){e.preventDefault();window.__bip=e});
+window.rqNotify=function(t,m){try{fetch("https://ntfy.sh/",{method:"POST",keepalive:true,body:JSON.stringify({topic:"raqeeb-a65749e062577b01",title:t,message:m,priority:4,tags:["bell"],click:"https://maroo2288.github.io/Maroo-admin/"})}).catch(function(){})}catch(e){}};</script>
+<script type="application/ld+json" id="rq-ld">{"@context":"https://schema.org","@type":"LocalBusiness","name":"رقيب","description":"تركيب وصيانة كاميرات المراقبة للبيوت والمحلات والشركات","url":"https://maroo2288.github.io/Maroo/","image":"https://maroo2288.github.io/Maroo/og-image.png","telephone":"+201201016897","email":"maroo01201016897@gmail.com","areaServed":"EG"}</script>
 <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#F2F5F4;--card:#fff;--ink:#12263A;--mut:#5B6B79;--line:#D9E1E5;--acc:#1F5FD6;--rec:#E8452C;--hero:#12263A;--heroink:#EAF1F6;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -640,8 +642,7 @@ ${pk?`<h2 id="wpk">الباقات</h2><div class="wgrid">${pk}</div>`:""}
 ${pf?`<h2>من أعمالنا</h2><div class="wgrid">${pf}</div>`:""}
 <h2>أسئلة شائعة</h2><div class="wfq">${FQ.map(q=>`<details><summary>${q[0]}</summary><p>${q[1]}</p></details>`).join("")}</div>
 <h2 id="wform">اطلب موقعك</h2><div class="wfm"><p class="wfn">احكيلنا عن فكرتك وهنرد عليك على واتساب بتصوّر مبدئي وخطوات التنفيذ.</p><select id="wty" aria-label="نوع الموقع"><option>صفحة تعريفية</option><option>متجر إلكتروني</option><option>نظام مخصص</option><option>مش متأكد، عايز استشارة</option></select><input id="wnm" placeholder="الاسم" autocomplete="name"><input id="wph" placeholder="رقم الموبايل" type="tel" inputmode="tel" autocomplete="tel"><textarea id="wdt" rows="3" placeholder="احكيلنا عن فكرتك أو نشاطك"></textarea><button class="btn" id="wsd" style="width:100%">ابعت الطلب على واتساب</button><p id="wer" style="color:var(--rec);margin:6px 0 0" hidden></p></div>`;
-const sd=$("wsd");if(sd)sd.onclick=function(){const n=$("wnm").value.trim(),p=$("wph").value.trim(),e=$("wer");if(n.length<2){e.textContent="اكتب اسمك";e.hidden=false;return}if(p.replace(/\D/g,"").length<10){e.textContent="اكتب رقم موبايل صحيح";e.hidden=false;return}e.hidden=true;
-window.open(wam("طلب موقع جديد\nالنوع: "+$("wty").value+"\nالاسم: "+n+"\nالموبايل: "+p+($("wdt").value.trim()?"\nالتفاصيل: "+$("wdt").value.trim():"")),"_blank")}}
+const sd=$("wsd");if(sd)sd.onclick=function(){const n=$("wnm").value.trim(),p=$("wph").value.trim(),e=$("wer");if(n.length<2){e.textContent="اكتب اسمك";e.hidden=false;return}if(p.replace(/\D/g,"").length<10){e.textContent="اكتب رقم موبايل صحيح";e.hidden=false;return}e.hidden=true; try{rqNotify("💻 طلب موقع جديد",$("wty").value)}catch(e){} window.open(wam("طلب موقع جديد\nالنوع: "+$("wty").value+"\nالاسم: "+n+"\nالموبايل: "+p+($("wdt").value.trim()?"\nالتفاصيل: "+$("wdt").value.trim():"")),"_blank")}}
 function calc(){const q=quote();$("k5").innerHTML=q?q.L.map(l=>`<div class="it"><span>${esc(l[0])}</span><b>${fm(l[1])}</b></div>`).join("")+`<div class="pr" style="margin-top:8px">الإجمالي: ${fm(q.t)} جنيه</div>`+(q.w?`<small style="color:var(--rec)">${esc(q.w)}</small>`:""):""}
 var cart={},cat="الكل",$=function(i){return document.getElementById(i)};
 function fm(n){return n.toLocaleString("ar-EG")}
@@ -836,8 +837,7 @@ window.rqTrk=trk;
 function dtab(t){var dr=$("dr");dr.classList.toggle("otab",t==="o");[].forEach.call(dr.querySelectorAll("[data-dt]"),function(b){b.classList.toggle("on",b.dataset.dt===t)});
 var c=Object.keys(cart).length+(qt?1:0);$("dtc").textContent=c?"("+c+")":"";$("dto").textContent=MY.length?"("+MY.length+")":"";
 if(t==="o"){MY.forEach(function(o){o.sn=o.st});ordStore();ordRender();ordBadge();trk()}}
-function saveOrder(m,ref,L,tot){var rec={ref:ref,t:Date.now(),items:L,total:tot,id:null,st:"جديد",sn:"جديد"};MY.push(rec);ordStore();ordBadge();
-if(!window.FB)return;FB.addDoc(FB.collection(FB.db,"orders"),{name:$("nm").value.slice(0,100),phone:$("ph").value.slice(0,30),address:$("ad").value.slice(0,300),area:zone()?String(zone().a).slice(0,80):"",items:m.slice(0,3000),total:TOT,status:"جديد",ts:FB.serverTimestamp()}).then(function(r){rec.id=r.id;ordStore();return FB.setDoc(FB.doc(FB.db,"track",r.id),{ref:ref,status:"جديد",ts:FB.serverTimestamp()})}).catch(function(){})}
+function saveOrder(m,ref,L,tot){var rec={ref:ref,t:Date.now(),items:L,total:tot,id:null,st:"جديد",sn:"جديد"};MY.push(rec);ordStore();ordBadge(); try{rqNotify("🛒 طلب جديد "+ref,"الإجمالي: "+tot+" جنيه"+(zone()?" | "+zone().a:""))}catch(e){} if(!window.FB)return;FB.addDoc(FB.collection(FB.db,"orders"),{name:$("nm").value.slice(0,100),phone:$("ph").value.slice(0,30),address:$("ad").value.slice(0,300),area:zone()?String(zone().a).slice(0,80):"",items:m.slice(0,3000),total:TOT,status:"جديد",ts:FB.serverTimestamp()}).then(function(r){rec.id=r.id;ordStore();return FB.setDoc(FB.doc(FB.db,"track",r.id),{ref:ref,status:"جديد",ts:FB.serverTimestamp()})}).catch(function(){})}
 (function(){var dr=$("dr"),was=false;
 new MutationObserver(function(){var on=dr.classList.contains("on");if(on&&!was){var empty=!Object.keys(cart).length&&!qt;dtab(empty&&MY.length?"o":"c")}was=on}).observe(dr,{attributes:true,attributeFilter:["class"]});
 dr.addEventListener("click",function(e){var t=e.target,a=t.closest&&t.closest("[data-dt]");if(a){dtab(a.dataset.dt);return}
@@ -849,6 +849,11 @@ document.addEventListener("visibilitychange",function(){if(!document.hidden&&MY.
 ordBadge();if(MY.some(ordOpen))setTimeout(trk,1500)})();
 function dbg(e){if(!/debug/.test(location.search))return;const b=document.createElement("pre");b.style.cssText="position:fixed;top:0;left:0;right:0;z-index:99;background:#900;color:#fff;font:12px monospace;padding:6px;white-space:pre-wrap;direction:ltr;max-height:40vh;overflow:auto";b.textContent=String(e&&(e.stack||e.message)||e);document.body.appendChild(b)}
 addEventListener("error",e=>dbg(e.message));addEventListener("unhandledrejection",e=>dbg(e.reason));
+function rqSeo(){if(window.RQ_ADMIN)return;var u="https://maroo2288.github.io/Maroo/",g=[],b={"@type":"LocalBusiness","@id":u+"#biz","name":S.n,"description":"تركيب وصيانة كاميرات المراقبة للبيوت والمحلات والشركات","url":u,"image":u+"og-image.png","telephone":"+"+String(S.wa||"").replace(/\D/g,""),"email":S.em};
+var ar=(S.ar||[]).filter(function(x){return x&&x.a}).map(function(x){return{"@type":"Place","name":String(x.a)}});b.areaServed=ar.length?ar:{"@type":"Country","name":"Egypt"};
+var sa=["fb","ig","tk"].map(function(k){return S.so&&S.so[k]}).filter(function(v){return /^https?:\/\//.test(v||"")});if(sa.length)b.sameAs=sa;g.push(b);
+var fq=(S.fq||[]).filter(function(x){return x&&x.q&&x.a});if(fq.length)g.push({"@type":"FAQPage","mainEntity":fq.map(function(x){return{"@type":"Question","name":String(x.q),"acceptedAnswer":{"@type":"Answer","text":String(x.a)}}})});
+var el=document.getElementById("rq-ld");if(el)el.textContent=JSON.stringify({"@context":"https://schema.org","@graph":g})}
 async function boot(){let st="def";
 await new Promise(r=>{if(window.FB)r();else{addEventListener("fb",r);setTimeout(r,5000)}});
 if(window.FBERR)dbg("تعذر تحميل مكتبة Firebase (ممكن حاجب إعلانات أو النت)");
@@ -859,7 +864,7 @@ if(m.exists()){S=Object.assign(S,m.data().S||{});
 const ld=async c=>(await T(FB.getDocs(FB.collection(FB.db,c)))).docs.map(d=>({...d.data(),id:d.id})).sort((a,b)=>(a.ord||0)-(b.ord||0));
 P=await ld("products");W=await ld("works");st="db"}}catch(e){st="fail";console.error(e);dbg(e)}
 P.forEach(x=>{if(x.id)snap["p"+x.id]=JSON.stringify(x);x.im=x.im||[];const lg=!(x.ic>0);x.gl=lg||!(x.ic>1);if(x.id){GC[x.id]=lg?1:x.ic;if(x.gl&&!lg)x._gs=JSON.stringify(x.im.slice(1))}});W.forEach(x=>{x.im=x.im||[];if(x.id)snap["w"+x.id]=JSON.stringify(x)});
-for(const f of [shell,more,restore,draw])try{f()}catch(e){dbg(e)}
+for(const f of [shell,more,restore,draw,rqSeo])try{f()}catch(e){dbg(e)}
 if(st=="fail"){$("calc").hidden=true;$("tabs").innerHTML="";$("pg").innerHTML='<p style="color:var(--mut)">مش قادر أحمّل المنتجات دلوقتي. حدّث الصفحة وجرب تاني.</p>';$("wk").innerHTML=""}
 else for(const f of [tabs,prods,works])try{f()}catch(e){dbg(e)}
 try{window.rqRoute&&window.rqRoute(true)}catch(e){}
