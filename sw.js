@@ -1,4 +1,4 @@
-// رقيب (الموقع) — service worker مستقل. الأدمن ليه SW خاص في /admin/
+// رقيب (الموقع) — service worker مستقل. الأدمن تطبيق منفصل في ريبو Maroo-admin
 const V="raqeeb-site-v3",PFX="raqeeb-site-";
 const SHELL=["./","./index.html","./manifest.webmanifest","./icon-192.png","./icon-512.png"];
 self.addEventListener("install",e=>{e.waitUntil(caches.open(V).then(c=>Promise.all(SHELL.map(u=>c.add(u).catch(()=>{})))).then(()=>self.skipWaiting()))});
@@ -6,7 +6,6 @@ self.addEventListener("activate",e=>{e.waitUntil(caches.keys().then(k=>Promise.a
 self.addEventListener("fetch",e=>{
  const r=e.request;if(r.method!=="GET")return;
  const u=new URL(r.url);if(u.origin!==location.origin)return;
- if(u.pathname.indexOf("/admin/")!==-1||/\/admin$/.test(u.pathname))return; // تطبيق الأدمن مستقل
  if(r.mode==="navigate"){
   e.respondWith(fetch(r).then(res=>{const c=res.clone();caches.open(V).then(x=>x.put("./index.html",c));return res}).catch(()=>caches.match("./index.html")));return}
  e.respondWith(caches.match(r).then(m=>{
