@@ -1,6 +1,6 @@
 // رقيب (الموقع) — service worker مستقل. الأدمن تطبيق منفصل في ريبو Maroo-admin
-const V="raqeeb-site-v3",PFX="raqeeb-site-";
-const SHELL=["./","./index.html","./manifest.webmanifest","./icon-192.png","./icon-512.png"];
+const V="raqeeb-site-v4",PFX="raqeeb-site-";
+const SHELL=["./","./index.html","./manifest.webmanifest","./icon-192.png","./icon-512.png","./fonts/tajawal-arabic-500.woff2","./fonts/tajawal-latin-500.woff2","./fonts/tajawal-arabic-900.woff2","./fonts/tajawal-latin-900.woff2","./fonts/tajawal-arabic-400.woff2","./fonts/tajawal-latin-400.woff2","./fonts/tajawal-arabic-700.woff2","./fonts/tajawal-latin-700.woff2"];
 self.addEventListener("install",e=>{e.waitUntil(caches.open(V).then(c=>Promise.all(SHELL.map(u=>c.add(u).catch(()=>{})))).then(()=>self.skipWaiting()))});
 self.addEventListener("activate",e=>{e.waitUntil(caches.keys().then(k=>Promise.all(k.filter(x=>x.indexOf(PFX)===0&&x!==V||x==="raqeeb-v2").map(x=>caches.delete(x)))).then(()=>clients.claim()))});
 self.addEventListener("fetch",e=>{
